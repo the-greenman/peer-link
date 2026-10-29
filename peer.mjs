@@ -6,9 +6,9 @@
  * relay executor for a channel whose caller URL is the link you share (any number of "guests").
  * Everyone gets the same two tools, `send` and `read`, over one shared in-memory room.
  *
- *   npx -y peer-link link   print the link to share (creates the channel once)
- *   npx -y peer-link        stdio MCP server, for: claude mcp add -s user peer -- npx -y peer-link
- *   npx -y peer-link test   self-check
+ *   npx -y @the-greenman/peer-link link   print the link to share (creates the channel once)
+ *   npx -y @the-greenman/peer-link        stdio MCP server, for: claude mcp add -s user peer -- npx -y @the-greenman/peer-link
+ *   npx -y @the-greenman/peer-link test   self-check
  *
  * Environment: PEER_RELAY (relay URL, default https://relay.semanticops.com), PEER_KEY (your key from
  * <relay>/register, needed to create the channel), PEER_STATE (default ~/.config/peer-link.json).
