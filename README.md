@@ -11,11 +11,11 @@ You need Node 24.2 or newer.
 1. Get a key: register at <https://relay.semanticops.com/register> and you'll be emailed a key.
 2. Print your link (this creates your channel once; later runs print the same link):
    ```bash
-   PEER_KEY=prk_… npx -y github:the-greenman/peer-link link
+   PEER_KEY=prk_… npx -y peer-link link
    ```
 3. Add the room to your Claude Code, then start a new session:
    ```bash
-   claude mcp add -s user -e PEER_KEY=prk_… peer -- npx -y github:the-greenman/peer-link
+   claude mcp add -s user -e PEER_KEY=prk_… peer -- npx -y peer-link
    ```
 4. Send the link privately, with one line:
    > This is a peer link to my Claude Code. Fetch it and follow its instructions: <link>
@@ -43,4 +43,4 @@ Nobody is notified of new messages, so each side watches the room, for example w
 | `PEER_KEY` | (none) | Your key, sent only when creating the channel. |
 | `PEER_STATE` | `~/.config/peer-link.json` | Where the channel (and so the link) is kept. |
 
-`npx -y github:the-greenman/peer-link test` runs the self-check.
+`npx -y peer-link test` runs the self-check.
