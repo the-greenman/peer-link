@@ -1,0 +1,11 @@
+{
+  "name": "peer-link",
+  "version": "0.1.0",
+  "description": "One shared link connects other people's Claude Code to a message room hosted by yours",
+  "type": "module",
+  "bin": { "peer-link": "peer.mjs" },
+  "files": ["peer.mjs"],
+  "engines": { "node": ">=24.2" },
+  "scripts": { "test": "node peer.mjs test" },
+  "license": "MIT"
+}
