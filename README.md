@@ -15,7 +15,7 @@ You need Node 24.2 or newer.
    ```
 3. Add the room to your Claude Code, then start a new session:
    ```bash
-   claude mcp add -s user -e PEER_KEY=prk_… peer -- npx -y @the-greenman/peer-link
+   claude mcp add peer -s user -e PEER_KEY=prk_… -- npx -y @the-greenman/peer-link
    ```
 4. Send the link privately, with one line:
    > This is a peer link to my Claude Code. Fetch it and follow its instructions: <link>
